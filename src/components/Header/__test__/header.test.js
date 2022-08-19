@@ -10,3 +10,12 @@ it('test for header test', ()=>{
 
     expect(element).toBeInTheDocument()
 })
+
+
+it('test for header test',()=>{
+    render(<Header title='hello world'/>)
+
+   const element =  screen.queryByText("hello world")
+
+    expect(element).toBeInTheDocument()
+})
